@@ -36,7 +36,7 @@ const DisplayAlbum = () => {
                         songsData.map((item, index)=>{
                             return(
                                 <tr key={index}>
-                                    <td>{index}</td>
+                                    <td>{index + 1}</td>
                                     <td><img src={item.image} alt="" />{item.name}</td>
                                     <td>{albumData.name}</td>
                                     <td><p>5 days ago</p></td>

@@ -2,7 +2,10 @@ import React from 'react'
 import "./playbar.css"
 import { assets } from '../../assets/assets'
 import { songsData } from '../../assets/assets'
+import { usePlayer } from '../../context/PlayerContext'
 const Playbar = () => {
+
+    const {seekBg, seekbar} = usePlayer()
   return (
     <div className='play'>
 
@@ -22,9 +25,9 @@ const Playbar = () => {
           <img src={assets.next_icon} alt="img" />
           <img src={assets.mini_player_icon} alt="img" />
         </div>
-        <div className="player-scroller">
+        <div ref={seekBg}className="player-scroller">
             
-           <hr />
+           <hr ref={seekbar}/>
         </div>
       </div>
       <div className="more-btns">

@@ -4,9 +4,10 @@ import Playbar from './components/playbar/Playbar.jsx'
 
 
 import Display from './Display.jsx'
+import { usePlayer } from './context/PlayerContext.jsx'
 
 function App() {
-  
+  const {audioRef} = usePlayer()
 
   return (
     <div className='app'>
@@ -19,6 +20,7 @@ function App() {
      </div>
      <div className="player-box">
       <Playbar/>
+      <audio src="" ref={audioRef} preload='auto'></audio>
      </div>
     </div>
   )

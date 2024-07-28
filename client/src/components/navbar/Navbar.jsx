@@ -1,12 +1,14 @@
 import React from 'react'
 import "./navbar.css"
 import { assets } from '../../assets/assets'
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
+    const navigate = useNavigate()
   return (
     <div className='nav'>
       <div className="nav-left">
-        <img src={assets.arrow_left} alt="img" />
-        <img src={assets.arrow_right} alt="img" />
+        <img onClick={() => navigate(-1) }src={assets.arrow_left} alt="img" />
+        <img onClick={() => navigate(+1)} src={assets.arrow_right} alt="img" />
       </div>
 
       <div className="nav-right">

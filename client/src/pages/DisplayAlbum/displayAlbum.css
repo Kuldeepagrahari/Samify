@@ -1,11 +1,11 @@
 .top-cont{
     display: flex;
-    gap:20px;
+    gap:1vw;
     height:26vh;
     padding: 2vh 2vw;
 }
 .top-cont img{
-    height:22vh;
+    width: 10vw;
 }
 .top-cont-info{
     display: flex;
@@ -15,7 +15,8 @@
 
 }
 .top-cont-info p{
-  font-size: 1.3vw;
+    margin-top: 2vh;
+  font-size: 1vw;
   /* display: flex;
   align-items: center; */
 }
@@ -39,6 +40,7 @@
   table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 1.3vw;
     /* font-family: Arial, sans-serif; */
   }
   
@@ -52,6 +54,7 @@
     padding: 12px;
     text-align: left;
     font-weight: bold;
+    
   }
   
   hr {
@@ -67,6 +70,7 @@
   tbody td {
     padding: 10px;
     vertical-align: middle;
+    font-size: 1vw;
   }
   
   tbody tr:hover {
@@ -74,8 +78,8 @@
   }
   
   tbody img {
-    width: 30px;
-    height: 30px;
+    width: 3vw;
+    /* height: ; */
     margin-right: 10px;
     vertical-align: middle;
   }
