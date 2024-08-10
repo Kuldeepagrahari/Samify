@@ -7,7 +7,7 @@ import Display from './Display.jsx'
 import { usePlayer } from './context/PlayerContext.jsx'
 
 function App() {
-  const {audioRef} = usePlayer()
+  const {audioRef, track} = usePlayer()
 
   return (
     <div className='app'>
@@ -20,7 +20,7 @@ function App() {
      </div>
      <div className="player-box">
       <Playbar/>
-      <audio src="" ref={audioRef} preload='auto'></audio>
+      <audio ref={audioRef} src={track.file} preload='auto'></audio>
      </div>
     </div>
   )

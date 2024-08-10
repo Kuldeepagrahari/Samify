@@ -4,6 +4,7 @@ import { albumsData } from '../../assets/assets'
 import AlbumCard from '../../components/album-card/AlbumCard'
 import { songsData } from '../../assets/assets'
 import "./home.css"
+import SongItem from '../../components/songItem/songItem'
 const Home = () => {
   return (
     <div>
@@ -25,7 +26,7 @@ const Home = () => {
         <div className="album-container">
           {
             songsData.map((item, index) => {
-                return <AlbumCard id={index} key={index} image={item.image} name={item.name} desc={item.desc}/>
+                return <SongItem id={index} key={index} image={item.image} name={item.name} desc={item.desc}/>
             })
           }
         </div>

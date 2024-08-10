@@ -44,16 +44,26 @@
     
 
 }
-.player-scroller{
-    width: 60vw;
-    background-color: gray;
+.player-scroller {
+    width: 50vw;
+    background-color: rgb(40, 39, 39);
     cursor: pointer;
-}
-.player-scroller hr{
-    /* border: none; */
-    width:100px;
-    background-color: rgb(207, 3, 253);
-}
+    height: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Start aligns the progress bar to the beginning */
+    position: relative;
+  }
+  
+  .player-scroller hr {
+    width: 0%; /* Start with 0% and let JS adjust it */
+    height: 100%;
+    background-color: rgb(3, 253, 78);
+    border: none;
+    position: absolute; /* Position it inside the player-scroller */
+    
+  }
+  
 .more-btns{
     width:13vw;
     display: flex;

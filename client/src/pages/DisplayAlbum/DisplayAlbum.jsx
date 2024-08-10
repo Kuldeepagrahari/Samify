@@ -3,9 +3,13 @@ import Navbar from '../../components/navbar/Navbar'
 import { useParams } from 'react-router-dom'
 import { albumsData, assets, songsData } from '../../assets/assets'
 import "./displayAlbum.css"
+import { usePlayer } from '../../context/PlayerContext'
 const DisplayAlbum = () => {
     const {id} = useParams()
     const albumData = albumsData[id]
+    const {playWithId} = usePlayer()
+
+
   return (
 
     
@@ -35,7 +39,7 @@ const DisplayAlbum = () => {
                     {
                         songsData.map((item, index)=>{
                             return(
-                                <tr key={index}>
+                                <tr onClick={() => {playWithId(index) }} key={index}>
                                     <td>{index + 1}</td>
                                     <td><img src={item.image} alt="" />{item.name}</td>
                                     <td>{albumData.name}</td>

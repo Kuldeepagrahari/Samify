@@ -48,6 +48,7 @@
   
   thead tr {
     border-bottom: 2px solid #ddd;
+    /* cursor: pointer; */
   }
   
   thead td {
@@ -72,7 +73,9 @@
     vertical-align: middle;
     font-size: 1vw;
   }
-  
+  tbody tr{
+    cursor: pointer;
+  }
   tbody tr:hover {
     background-color: #1c1c1c;
   }
