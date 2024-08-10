@@ -23,6 +23,7 @@
 .sidebar-top-head{
     display: flex;
     align-items: center;
+ 
     /* justify-content: center; */
     gap:10px;
     width: 100%;
@@ -37,6 +38,7 @@
     padding-left: 2vw;
     width: 100%;
     font-size: 1.1vw;
+    cursor: pointer;
 }
 .sidebar-top-options img{
     width: 1.3vw;

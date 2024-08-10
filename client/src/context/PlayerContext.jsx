@@ -55,6 +55,11 @@ export const PlayerContextProvider = ({children}) => {
         await audioRef.current.play()
       }
     }
+
+    const seekingBg = (e) => {
+          audioRef.current.currentTime = ((e.nativeEvent.offsetX / seekBg.current.offsetWidth)*audioRef.current.duration);
+          console.log("width: " + seekBg.current.offsetWidth)
+    }
     useEffect(()=>{
       setTimeout(()=>{
         audioRef.current.ontimeupdate = () => {
@@ -75,6 +80,8 @@ export const PlayerContextProvider = ({children}) => {
         }
       })
     },[audioRef])
+
+
     const Contextvalue = {
       audioRef,
       seekBg,
@@ -84,7 +91,8 @@ export const PlayerContextProvider = ({children}) => {
       playing, SetPlaying,
       time,
       playWithId,
-      next, previous
+      next, previous, 
+      seekingBg
 
     }
    

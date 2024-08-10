@@ -41,14 +41,15 @@
 }
 .player-top img{
     width: 1vw;
+    cursor: pointer;
     
 
 }
 .player-scroller {
     width: 50vw;
-    background-color: rgb(40, 39, 39);
+    background-color: rgb(65, 63, 63);
     cursor: pointer;
-    height: 0.5vh;
+    height: 0.7vh;
     display: flex;
     align-items: center;
     justify-content: start; /* Start aligns the progress bar to the beginning */

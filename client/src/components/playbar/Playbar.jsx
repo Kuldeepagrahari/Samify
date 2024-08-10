@@ -5,7 +5,7 @@ import { songsData } from '../../assets/assets'
 import { usePlayer } from '../../context/PlayerContext'
 const Playbar = () => {
 
-  const { seekBg, seekbar, play, pause, playing, track, time, next, previous } = usePlayer()
+  const { seekBg,seekingBg, seekbar, play, pause, playing, track, time, next, previous } = usePlayer()
 
 
   return (
@@ -31,7 +31,7 @@ const Playbar = () => {
           <img onClick = {()=>next()} src={assets.next_icon} alt="img" />
           <img src={assets.mini_player_icon} alt="img" />
         </div>
-        <div ref={seekBg} className="player-scroller">
+        <div ref={seekBg} onClick={seekingBg} className="player-scroller">
 
           <p style={{ color: "white", position:"absolute",left:"-4vw" }}>{time.currentTime.minute} : {time.currentTime.second} </p> <hr ref={seekbar} /><p style={{position:"absolute",right:"-4vw"}}>{time.totalTime.minute} : {time.totalTime.second}</p>
         </div>

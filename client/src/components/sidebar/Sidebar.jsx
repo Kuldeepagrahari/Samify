@@ -1,7 +1,10 @@
 import React from 'react'
 import "./sidebar.css"
 import {assets} from "../../assets/assets"
+import {useNavigate} from "react-router-dom"
 const Sidebar = () => {
+
+  const navigate = useNavigate()
   return (
     <div className='sidebar'>
       <div className="sidebar-top">
@@ -9,7 +12,9 @@ const Sidebar = () => {
           <img src={assets.spotify_logo} alt="" />
           <h2>Samify</h2>
         </div>
-        <div className="sidebar-top-options">
+        <div onClick={()=>{
+          navigate("/")
+        }}className="sidebar-top-options">
             <img src={assets.home_icon} alt="home" />
             <p>Home</p>
         </div>
