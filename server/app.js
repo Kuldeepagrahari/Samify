@@ -6,6 +6,9 @@ import songRouter from "./src/router/songRoutes.js";
 import connectDb from "./src/utils/db.js";
 import connectCloudinary from "./src/utils/cloudinary.js";
 
+// Improvements
+// we will move to imagekit
+
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
