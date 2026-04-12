@@ -50,26 +50,35 @@ This application simulates a real-world music streaming platform:
 | API Client      | Axios                             |
 
 ---
+## 📡 API Endpoints
 
-📡 API Endpoints
-🎵 Songs
-Method	Endpoint	Description
-POST	/api/song/add	Upload a new song
-GET	/api/song/list	Get all songs
-POST	/api/song/remove	Delete a song
-💿 Albums
-Method	Endpoint	Description
-POST	/api/album/add	Create album
-GET	/api/album/list	Get all albums
-POST	/api/album/remove	Delete album
+### 🎵 Songs
+- **POST** `/api/song/add` → Upload a new song  
+- **GET** `/api/song/list` → Get all songs  
+- **POST** `/api/song/remove` → Delete a song  
 
-💡 Future Improvements
-User authentication (JWT / OAuth)
-Playlist creation & management
-Like / favorite songs
-Search functionality
-Real-time streaming enhancements
-🤝 Contributing
+### 💿 Albums
+- **POST** `/api/album/add` → Create album  
+- **GET** `/api/album/list` → Get all albums  
+- **POST** `/api/album/remove` → Delete album  
+
+---
+
+## 💡 Future Improvements
+- User authentication (JWT / OAuth)  
+- Playlist creation & management  
+- Like / favorite songs  
+- Search functionality  
+- Real-time streaming enhancements  
+
+---
+
+## 🤝 Contributing
+- Fork the repository  
+- Create a new branch (`feature/your-feature-name`)  
+- Commit your changes  
+- Push to your branch  
+- Open a Pull Request  
 
 Contributions are welcome!
 
