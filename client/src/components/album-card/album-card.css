@@ -6,8 +6,8 @@
     flex-direction: column;
     justify-content: space-around;
     /* align-items: center; */
-    width: 150px;
-    height: 190px;
+    width: 180px;
+    height: 270px;
     padding: 1vh 1vw;
    
     
@@ -21,14 +21,16 @@
 }
 
 .album-card img{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 
 .album-card h2{
     font-size: 1.1vw;
+    color:rgb(239, 237, 237);
 }
 .album-card p{
-    font-size: 0.8vw;
+    font-size: 0.9vw;
+    color:rgb(177, 176, 176);
 }

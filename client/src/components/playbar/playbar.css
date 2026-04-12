@@ -49,7 +49,8 @@
     width: 50vw;
     background-color: rgb(65, 63, 63);
     cursor: pointer;
-    height: 0.7vh;
+    height: 1vh;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: start; /* Start aligns the progress bar to the beginning */

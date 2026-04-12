@@ -11,12 +11,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(express.json({ limit: '10mb' }));
-app.use(cors({ origin: "http://localhost:5173" })); // Corrected origin
+app.use(express.json());
+app.use(cors()); // Corrected origin
 
 // Routes
 app.use(router);
-app.use("/api", songRouter);
+app.use("/api/song", songRouter);
 
 // Connect to DB and Cloudinary, then start server
 connectCloudinary();

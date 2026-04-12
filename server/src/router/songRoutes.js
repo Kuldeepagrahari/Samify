@@ -5,8 +5,16 @@ import uploads from "../middlewares/multer.js";
 const songRouter = express.Router();
 
 // Route for adding a song with image and audio file
-songRouter.route("/addSong").post(
-    uploads.fields([{ name: "image", maxCount: 1 }, { name: "audio", maxCount: 1 }]),
+// songRouter.post("/add",
+//     uploads.fields([{ name:"image", maxCount:1 }, { name:"audio", maxCount:1 }]),
+//     AddSong
+// );
+songRouter.post("/add",
+    uploads.fields([{name:'image',maxCount:1},{name:"audio",maxCount:1}]),
+    // (req, res, next) => {
+    //     console.log(req.files); // This should show both 'image' and 'audio' fields
+    //     next();
+    // },
     AddSong
 );
 

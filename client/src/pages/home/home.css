@@ -1,8 +1,10 @@
 .home-body{
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
-    padding: 0 2vw;
+
+    margin-top: 4vh;
+    padding: 0 1vw;
+    padding-left: 2vw;
     /* overflow: auto; */
     /* background-color: red; */
     /* align-items: center; */
@@ -10,8 +12,11 @@
 
 .album-container{
     display: flex;
+   
+    
     overflow: auto;
-    margin-top: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
     width: 100%;
     
 }

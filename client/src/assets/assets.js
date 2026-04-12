@@ -42,6 +42,7 @@ import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
 
+
 export const assets = {
     bell_icon,
     home_icon,
@@ -110,6 +111,56 @@ export const albumsData = [
         name: "Happy Favorites",
         image: img15,
         desc:"Your weekly update of the most played tracks",
+        bgColor:"#744210"
+    }
+]
+export const singerData = [
+    {   
+        id:0,
+        name: "Arijit Singh",
+        image: "https://i.pinimg.com/474x/e0/23/aa/e023aa0dd61982d2a973b0a185d1dc04.jpg",
+        bgColor:"#2a4365"
+    },
+    {   
+        id:1,
+        name: "Armaan Malik",
+        image:"https://i.pinimg.com/474x/56/5b/0e/565b0efe66cc8e2c1ef17dd1fc8b25ec.jpg",
+        bgColor:"orangered"
+    },
+    {   
+        id:2,
+        name: "Sonu Nigam",
+        image: "https://i.pinimg.com/474x/8f/56/3a/8f563a19039506c765017bf004f304a2.jpg",
+        bgColor:"rgb(0, 10, 100)"
+    },
+    {   
+        id:3,
+        name: "Kumar Sanu",
+        image: "https://i.pinimg.com/474x/ed/6e/88/ed6e888cbbabbb6eb60a7741f3c6287c.jpg",
+        bgColor:"rgb(50, 50, 100)"
+    },
+    {   
+        id:4,
+        name: "Alka Yagnik",
+        image: "https://i.pinimg.com/474x/be/ac/9a/beac9a5caee899f1e7b4610cf6e364a7.jpg",
+        bgColor:"gray"
+    },
+    {   
+        id:5,
+        name: "Shreya Ghosal",
+        image: "https://i.pinimg.com/474x/cf/40/ea/cf40ea4e7c2e04b3cde59237640005cb.jpg",
+        bgColor:"brown"
+    },
+    {   
+        id:6,
+        name: "Udit Narayan",
+        image: "https://i.pinimg.com/474x/7f/3b/81/7f3b81aa9d71d034f61543168d6bf46a.jpg",
+        bgColor:"#744210"
+    },
+    {   
+        id:7,
+        name: "KK",
+        image: "https://i.pinimg.com/474x/cb/4e/ab/cb4eab19cb899743bcde5b61f51126ea.jpg",
         bgColor:"#744210"
     }
 ]

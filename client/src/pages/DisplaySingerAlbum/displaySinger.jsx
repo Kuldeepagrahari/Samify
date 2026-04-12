@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import { useParams } from 'react-router-dom'
-import { albumsData, assets, songsData } from '../../assets/assets'
-import "./displayAlbum.css"
+import { assets, songsData , singerData, albumsData} from '../../assets/assets'
+import "../DisplayAlbum/displayAlbum.css"
 import { usePlayer } from '../../context/PlayerContext'
-const DisplayAlbum = () => {
+const DisplaySinger = () => {
     const {id} = useParams()
+    const singerdata = singerData[id]
     const albumData = albumsData[id]
     const {playWithId} = usePlayer()
 
@@ -13,13 +14,13 @@ const DisplayAlbum = () => {
   return (
 
     
-    <div style={{ backgroundImage: `linear-gradient(180deg, ${albumData.bgColor},  black)` }}>
+    <div style={{ backgroundImage: `linear-gradient(180deg, ${singerdata.bgColor},  black)` }}>
         <Navbar/>
         <div className="top-cont" >
-           <img src={albumData.image} alt="img" />
-           <div className="top-cont-info">
-            <h1>{albumData.name}</h1>
-            <p>{albumData.desc}</p>
+           <img src={singerdata.image} alt="img" />
+           <div className="top-cont-info" style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
+            <h1>{singerdata.name}</h1>
+           
             <p><div className="display-album-logo"><img src={assets.spotify_logo} alt="img" />Samify</div>50 Songs  1,234,567 likes</p>
            </div>
         </div>
@@ -58,4 +59,4 @@ const DisplayAlbum = () => {
   )
 }
 
-export default DisplayAlbum
+export default DisplaySinger

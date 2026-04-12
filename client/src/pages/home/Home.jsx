@@ -1,15 +1,28 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import { albumsData } from '../../assets/assets'
+import { albumsData, singerData } from '../../assets/assets'
 import AlbumCard from '../../components/album-card/AlbumCard'
 import { songsData } from '../../assets/assets'
 import "./home.css"
 import SongItem from '../../components/songItem/songItem'
+import SingerCard from '../../components/singer-card/singerCard'
 const Home = () => {
   return (
     <div>
       <Navbar></Navbar>
       <div className="containers">
+      
+      <div className="home-body">
+        <h1 style={{fontSize:"2vw"}}>Star Singers</h1>
+        <div className="album-container" style={{}}>
+          {
+            singerData.map((item, index) => {
+                return <SingerCard id={index} key={index} image={item.image} name={item.name} desc={item.desc}/>
+            })
+          }
+        </div>
+       </div>
+
        <div className="home-body">
         <h1 style={{fontSize:"2vw"}}>Featured Charts</h1>
         <div className="album-container">
